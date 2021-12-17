@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario Registro</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <div class="row">
+      <div class="col l5 offset-l1 s12">
+        <table id="transactionTable">
+          <h4>Tabla de Usuarios</h4>
+          <thead>
+            <tr bgcolor= "aqua">
+              <th scope="col">Genero</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Celular</th>
+              <th scope="col">Nivel de Estudio</th>
+              <th scope="col">Borrar</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="col l5 s12">
+        <div class="col s8 offset-s2">
+          <form id="transactionForm">
+            <div class="formField">
+              <p>
+                <span>Genero     </span>
+                <label>
+                  
+                  <input
+                    value="Masculino"
+                    class="with-gap"
+                    name="transactionType"
+                    type="radio"
+                    checked
+                  />
+                  <span>Masculino</span>
+                </label>
+                <label>
+                  
+                  <input
+                    value="Femenino"
+                    class="with-gap"
+                    name="transactionType"
+                    type="radio"
+                  />
+                  <span>Femenino</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field">
+              <label for="transactionDescription" >Nombre</label>
+              <input
+                class="validate"
+                type="text"
+                id="transactionDescription"
+                name="transactionDescription"
+              />
+            </div>
+            <div class="input-field">
+              <label for="transactionAmount">Celular</label>
+              <input
+                class="validate"
+                id="transactionAmount"
+                name="transactionAmount"
+                type="number"
+              />
+            </div>
+            <div class="formField">
+              <label for="transactionCategory">Nivel de estudio</label>
+
+              <select
+                class="browser-default"
+                id="transactionCategory"
+                name="transactionCategory"
+              ></select>
+            </div>
+            <br />
+            <button
+              class="btn btn-primary"
+              type="submit"
+              name="action"
+              id="botonDeEnvio"
+              
+            >
+              Enviar Informacion 
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
+  </body>
+</html>

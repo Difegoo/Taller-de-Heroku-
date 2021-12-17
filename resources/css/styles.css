@@ -1,0 +1,61 @@
+td,
+html {
+    background: #9fe9e9;
+    
+}
+select {
+    background: #9fe9e9;
+    
+}
+span {
+    font-style: italic;
+    
+}
+label {
+    font-style: italic;
+    font-size: 15px;
+    
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+    border: solid rgb(11, 3, 88) 1px;
+}
+
+.tableFormat table {
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0 1.68rem 0;
+    color: rgb(4, 29, 253);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+h4 {
+    text-align: center;
+    color: rgb(4, 29, 253);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+form {
+    text-align: center;
+}
+form label{
+	color: rgb(4, 29, 253);
+}
+form span{
+	color: rgb(4, 29, 253);
+}
+
+
+#botonDeEnvio {
+    font-size: 23px;
+    color: aqua;
+}
